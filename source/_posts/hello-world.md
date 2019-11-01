@@ -1,38 +1,23 @@
 ---
-title: Hello World
+title: Welcome to My Blog
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+Hi,
 
-### Create a new post
+I am Orkhan, Front-End Engineer a.k.a JavaScript Developer with nearly 3 years of experience with development of front-end and full stack web applications using JavaScript and JS related technologies. I am interested in math, computer science and everything related to programming and math.
 
-``` bash
-$ hexo new "My New Post"
+I love solving programming problems and learning topics like Theory of Computation, Compiler Theory, Algorithms and Data Structures.
+
+Apart from JavaScript, I have developed some middle sized, small and large project using Java and PHP. I am willing to learn C++ in order to contribute Google's V8 engine. I can work with React, Redux, Jest, Enzyme, Angular2+, RxJS, TypeScript and Laravel.
+
+```javascript
+var Blog = (function() {
+  return {
+    init: function initBlog() {
+      console.log("Let's get started! :)");
+    }
+  };
+})();
+
+Blog.init();
 ```
-
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
