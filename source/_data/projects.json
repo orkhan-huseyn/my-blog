@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Basic interpreter",
+    "url": "https://github.com/orkhan-huseyn/basic-interpreter",
+    "desc": "A simple interpreter for C like programming language written in Java"
+  },
+  {
+    "name": "Number to Azerbaijani word",
+    "url": "https://www.npmjs.com/package/number-to-azerbaijani-word",
+    "desc": "A library to convert any integer or double to its Azerbaijani description"
+  },
+  {
+    "name": "UNPSF 2019 Baku Website",
+    "url": "https://unpsf2019baku.com/",
+    "desc": "A website for United Nations Publis Service Forum which held on Baku in June, 2019"
+  }
+]
