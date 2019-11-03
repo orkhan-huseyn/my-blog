@@ -11,7 +11,7 @@ Let's say we have an [infix](https://en.wikipedia.org/wiki/Infix_notation) expre
 
 {% asset_img an-infix-exp.png "an infix expression" %}
 
-Now, before we move to the solution think about how you can solve it. Or if you want to directly dive into the solution then let's begin. The two stack algorithm, also known as [Shunting-yard algorithm](https://en.wikipedia.org/wiki/Shunting-yard_algorithm) was invented by [Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra) is a method for parsing mathematical expressions in infix notation. As the name suggests it uses two stacks, and the algorithm is simple:
+Now, before we move to the solution think about how you can solve it. Or if you want to directly dive into the solution then let's begin. The two stack algorithm was invented by [Edsger Dijkstra](https://en.wikipedia.org/wiki/Edsger_W._Dijkstra) is a method for evaluation fully patenthesized mathematical expressions in infix notation. As the name suggests it uses two stacks, and the algorithm is simple:
 
 - We have two stacks: a value stack and an operator stack
 - Read the expression string from left to right
