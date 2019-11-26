@@ -82,3 +82,5 @@ Now, hopefully it makes sense why the negative numbers were depicted in the way 
 The contents of this article is heavily based on [Number Theory for Programmers](https://www.udemy.com/course/number-system/) course on Udemy, so I highly recommend you to enroll and learn more.
 
 Thanks for reading.
+
+If you find any mistakes on article, please let me know.
