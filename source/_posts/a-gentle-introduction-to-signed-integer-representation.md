@@ -3,6 +3,8 @@ title: A Gentle Introduction to Signed Integer Representation
 date: 2019-11-26 22:15:59
 ---
 
+{% asset_img cover.png signed-integer-representation %}
+
 ## Introduction
 
 When we talk about numbers and data types in programming we generally mention how many bytes they occupy in memory. For example, we say that 32 bit integer can hold values from 0 up to 2^32^-1, 64 bit can hold up to 2^64^ - 1 and etc. However, this examples are true when the integer is unsigned, which means that it consists of only positive numbers. In signed integers, the ones that hold both negative and positive values, the minimum and maximum values are different: 32 bit signed integers can hold values from -2^31^ up to 2^31^-1. Why? To understand it deeply, let see it visually.
