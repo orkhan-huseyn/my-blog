@@ -79,7 +79,7 @@ Similarly, in binary world, if you want to subtract a number from another, find 
 
 ## Conclusion
 
-Now, hopefully it makes sense why the negative numbers were depicted in the way they are. And as you already understood from the snippeds above any signed integers minimum value will be -2^n-1^ and maximum value will be 2^n-1^-1. If anyone asks you what is, let's say negative 8 in binary, just find what is positive 8 in binary, then two's complement of that number will be negative 8.
+Now, hopefully it makes sense why the negative numbers were depicted in the way they are. And as you already understood from the examples above any signed integers minimum value will be -2^n-1^ and maximum value will be 2^n-1^-1. If anyone asks you what is, let's say negative 8 in binary, just find what is positive 8 in binary, then two's complement of that number will be negative 8.
 
 The contents of this article is heavily based on [Number Theory for Programmers](https://www.udemy.com/course/number-system/) course on Udemy, so I highly recommend you to enroll and learn more.
 
