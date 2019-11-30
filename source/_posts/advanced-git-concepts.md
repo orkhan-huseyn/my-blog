@@ -1,12 +1,12 @@
 ---
-title: In-depth Git
+title: Advanced Git Concepts
 date: 2019-11-30 20:45:41
 tags:
 ---
 
-## What is git?
+## Introduction
 
-Git is a distributed version control system. However, in very basic terms, it is just a key value storage.
+What is Git? Git is a distributed version control system. However, in very basic terms, it is just a key value storage.
 
 ## How git stores data?
 
@@ -102,3 +102,31 @@ Here, `-t` flat will give you type of the object, and `-p` will print contents o
 For checking this, go ahead and look at your objects and try to see what's inside those objects. I took an arbitrary object from my `.git/objects` directory and inspected some of them. And I should also mention that you don't need to write the whole 40 digits of the hash, just first 6 characters are enough.
 
 <img src="cat-file-results.png" alt="git cat-file results">
+
+Also, note that not matter what a commit object will always have a unique hash. You know why? Yeah, because it contains a timestamp.
+
+### References
+
+References are anohter kind of objects that are relatively simple. They are simply pointers to commits. Example of references can be:
+
+- Tags
+- Branches
+- HEAD - a pointer to the current branch
+
+<img src="references.png" alt="git HEAD and master reference" width="400px">
+
+When you switch between branches it is usually lightning fast, the reason is that branches are just pointers to commits and HEAD is pointer to current branch. When you switch to another branch, Git will just change `HEAD` to point to the other branch.
+
+HEAD is stored inside `.git` folder and if you `cat` its contents, you can see that it is just a text that shows where is the current branch.
+
+```bash
+$ cat .git/HEAD
+ref: refs/heads/master
+```
+
+Go ahead and `cat` the contents of `.git/refs/heads/master`, you will see that it show you a SHA1 hash which is id of the last commit. Also, notice that all you branches are listed inside `.git/refs/heads` directory.
+
+```bash
+$ cat .git/refs/heads/master
+b0790c09de769a4441f179b0e935d3dd3c6b61a4
+```
