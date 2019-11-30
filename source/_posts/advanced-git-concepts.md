@@ -6,9 +6,9 @@ tags:
 
 ## Introduction
 
-What is Git? Git is a distributed version control system. However, in very basic terms, it is just a key value storage.
+Almost everyone, starting from teacher, writers to developers, everyone uses git. It is a distributed version control system which allows you to track changes during development and also enables teams to collaborate on a single project in an easy way. But what is Git really? In this article we will take a look at some advanced concepts and [plumbing commands](https://git-scm.com/docs) of Git.
 
-## How git stores data?
+## How does Git store data?
 
 At its core, Git is a simple key-value store.
 
@@ -17,7 +17,7 @@ At its core, Git is a simple key-value store.
 
 Git uses the key to retrieve the content
 
-The key is SHA1 which is a cryptographic hash function that produces 40 digit hexadecimal number. Given a peace of data, the output is always the same (typical of any hash function).
+The key is generated using SHA1 which is a cryptographic hash function that produces 40 digit hexadecimal number. Given a peace of data, the output is always the same (typical of any hash function).
 
 ## Git objects
 
@@ -34,7 +34,7 @@ An example of blob data is:
 
 <img src="blob.png" alt="git blob object" width="250px"/>
 
-Git generates the hash using `hash-object` command, if we generate a hash of string `hello` and also use `openssl sha1` to generate the hash of the same data, the hashes will be the same:
+Git generates the hash using `hash-object` plumbing command. If we generate a hash of string `hello` and also use `openssl sha1` to generate the hash of the same data, the hashes will be the same:
 
 ```bash
 $ echo -n hello | git hash-object --stdin
@@ -45,7 +45,7 @@ $ openssl sha1 test.txt
 SHA1(test.txt)= b6fc4c620b67d95f953a5c1c1230aaab5db5a1b0
 ```
 
-As you see the hashes are the same. Blobs are generally unique in a git project. Git stores blobs in `.git/objects` directory. If you want to see it in action then add `-w` flag to previous command, and look at `.git/objects` directory:
+As you see the hashes are the same. Blobs are generally unique in a git project. Git stores blobs in `.git/objects` directory. If you want to see it in action then add `-w` flag to previous command, and look at `.git/objects` directory. The newly genereted object will be stored in `.git/objects` directory; the first 2 letters of hash is folder name and the rest of the hash is file name.
 
 ```bash
 $ echo -n hello | git hash-object -w --stdin
@@ -53,8 +53,7 @@ $ echo -n hello | git hash-object -w --stdin
 
 ### Trees
 
-Blobs are just for storing contents of file. But we need to store directory structure, filename etc. as well.
-The other kind of data structure that Git uses is called **Tree**.
+Blobs are just for storing contents of file. But we need to store directory structure, filename etc. as well. The other kind of data structure that Git uses is called **Tree**.
 
 _A tree contains pointers to blobs and to other trees along with the metadata._
 
@@ -130,3 +129,9 @@ Go ahead and `cat` the contents of `.git/refs/heads/master`, you will see that i
 $ cat .git/refs/heads/master
 b0790c09de769a4441f179b0e935d3dd3c6b61a4
 ```
+
+## Conclusion
+
+The contens of this article are heavily based on [Git in-depth](https://frontendmasters.com/courses/git-in-depth) course in Front End Masters, so you can think of this article as my notes from the learning process.
+
+I hope this was useful and thanks for reading.
