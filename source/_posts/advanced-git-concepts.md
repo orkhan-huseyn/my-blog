@@ -106,7 +106,7 @@ My first command is `git cat-file -t 684ed3` which shows type of object which ha
 
 After this, I run `git cat-file -p aa9572` to show what's in that tree. And we clearly see that it has several pointers to other trees (directories) and some of those trees have pointers to other trees and some of them have pointers to blobs. So, a blob does not know what's file name, a tree does.
 
-The 6 digit numbers you see in front of mode which specifies what kind of file is it and what permissions does it have. Read more about modes [here](https://stackoverflow.com/questions/737673/how-to-read-the-mode-field-of-git-ls-trees-output).
+The 6 digit numbers you see in front of mode which specifies what kind of file is it and what permissions does it have. The first two digits are file type and last tree digits are UNIX permissions. Read more about modes [here](https://stackoverflow.com/questions/737673/how-to-read-the-mode-field-of-git-ls-trees-output).
 
 Also, note that no matter what (unless time freezes), a commit object will always have a unique hash. You know why? Yeah, because it contains a timestamp.
 
