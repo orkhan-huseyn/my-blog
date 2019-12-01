@@ -106,7 +106,7 @@ My first command is `git cat-file -t 684ed3` which shows type of object which ha
 
 After this, I run `git cat-file -p aa9572` to show what's in that tree. And we clearly see that it has several pointers to other trees (directories) and blobs.
 
-Also, note that not matter what a commit object will always have a unique hash. You know why? Yeah, because it contains a timestamp.
+Also, note that no matter what (unless time freezes), a commit object will always have a unique hash. You know why? Yeah, because it contains a timestamp.
 
 ### References
 
