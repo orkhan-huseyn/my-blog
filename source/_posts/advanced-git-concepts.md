@@ -104,7 +104,7 @@ For checking this, go ahead and look at your objects and try to see what's insid
 
 My first command is `git cat-file -t 684ed3` which shows type of object which has hash starting with `684ed3`. It showed that this object is a `commit`. Then I run `git cat-file -p 684ed3` to print contents of this commit object. As you see, this commit object contains a pointer to a tree and to the parent commit, info about author and committer (in this case me) along with timestamps and finally commit message.
 
-After this, I run `git cat-file -p aa9572` to show what's in that tree. And we clearly see that it has several pointers to other trees (directories) and blobs.
+After this, I run `git cat-file -p aa9572` to show what's in that tree. And we clearly see that it has several pointers to other trees (directories) and some of those trees have pointers to other trees and some of them have pointers to blobs. So, a blob does not know what's file name, a tree does.
 
 Also, note that no matter what (unless time freezes), a commit object will always have a unique hash. You know why? Yeah, because it contains a timestamp.
 
