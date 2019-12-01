@@ -6,7 +6,7 @@ tags:
 
 ## Introduction
 
-Almost everyone, starting from teacher, writers to developers, everyone uses git. It is a distributed version control system which allows you to track changes during development and also enables teams to collaborate on a single project in an easy way. But what is Git really? In this article we will take a look at some advanced concepts and [plumbing commands](https://git-scm.com/docs) of Git.
+Almost everyone, starting from teachers, writers to developers, everyone uses git. It is a distributed version control system which allows you to track changes during development and also enables teams to collaborate on a single project in an easy way. But what is Git really? In this article we will take a look at some advanced concepts and some of [plumbing commands](https://git-scm.com/docs) of Git.
 
 ## How does Git store data?
 
