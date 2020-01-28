@@ -8,7 +8,7 @@ Let's talk about a very simple string utility function that we use a lot. If som
 
 But have you ever thought how would yo do it if there is not a built-in function? If no, then this article is for you. The solution to this problem is very very very easy, actually. We just never think about it.
 
-The key is ASCII table. If you don't know what is this, it is simply a table that shows numerical representation of each character. ASCII stands for American Standard Code for Information Interchange and it contains only 128 characters.
+The key is ASCII table. If you don't know what is this, it is simply a table that shows numerical representation of each character. Remember? Computers can only understand numbers. ASCII stands for American Standard Code for Information Interchange and it contains only 128 characters.
 
 ![ascii table](./ascii-table.png)
 
