@@ -30,5 +30,5 @@ function toUpperCase(str) {
 }
 ```
 
-I hope this article for useful for you.
+I hope this article was useful for you.
 Thanks for reading!
