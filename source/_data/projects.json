@@ -7,12 +7,17 @@
   {
     "name": "Number to Azerbaijani word",
     "url": "https://www.npmjs.com/package/number-to-azerbaijani-word",
-    "desc": "A library to convert any integer or double to its Azerbaijani description"
+    "desc": "A library to convert any integer or double to its Azerbaijani description."
   },
   {
     "name": "UNPSF 2019 Baku Website",
     "url": "https://unpsf2019baku.com/",
-    "desc": "A website for United Nations Public Service Forum which held on Baku in June, 2019"
+    "desc": "A website for United Nations Public Service Forum which held on Baku in June, 2019."
+  },
+  {
+    "name": "ASAN Global Web Forum Website",
+    "url": "http://www.globalwebforum.asan.gov.az/",
+    "desc": "Website for ASAN Global Web Forum hosted by ASAN Service about Governments' Agile Response to COVID-19."
   },
   {
     "name": "Other projects which are private",
