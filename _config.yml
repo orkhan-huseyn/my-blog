@@ -4,8 +4,8 @@
 
 # Site
 title: Orkhan Huseynli
-subtitle: Front-End Engineer, JavaScrtip Developer
-description: Front-End Engineer with nearly 3 years of experience in development of Front-End and Full Stack web applications using JavaScript, ES6+, React, Redux, RxJS, PHP and Java.
+subtitle: Front-End Engineer, JavaScript Developer
+description: Front-End Engineer with 3 years of experience in development of Front-End and Full Stack web applications using JavaScript, ES6+, React, Redux, RxJS, PHP and Java.
 keywords: orkhan huseyn, orkhan huseynli, javascript developer, front-end engineer
 author: Orkhan Huseynli
 language: en
@@ -54,7 +54,7 @@ highlight:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
 
